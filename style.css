@@ -25,9 +25,12 @@ body {
     line-height: 35px;
     font-size: 18px;
     position: relative;
+
+    /* animation?
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    */
 }
 nav {
     display: flex;
