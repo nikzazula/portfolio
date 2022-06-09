@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="html5reset.css">
+    
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Nikolas Zazula</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!--scripts-->
     <script type="text/javascript" src="js/portfolio.js"></script>
+    <script src="site.js"></script>
     
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
   </head>
   <body>
@@ -32,6 +36,12 @@
     </div>
     </section>
     <!-- body -->
+    <div id="web-testing-div">
+        <object id="web-testing" data="your_url_to_pdf" type="application/pdf">
+            <iframe id="web-testing-pdf" src="fs_web_testing.pdf"></iframe>
+        </object>
+        <button class="exit-button" onclick="myFunction()">X</button>
+    </div>
     <section id="about-home" class="home-section">
         <div id="about-text-div">
             <h1 class="home-title">ABOUT</h1>
@@ -48,19 +58,20 @@
                 <img class="work-icon" src="images/dev.png" />
                 <h2 class="work-item-title">Development</h2>
                 <p class="work-item-text">Various development projects, including contract web design work and software development using full stack experience.</p>
-                <button class="grow work-button">VIEW MORE</button>
+                <button class="grow work-button" onclick="myFunction()" >VIEW MORE</button>
+                
             </div>
             <div class="work-item">
                 <img class="work-icon" src="images/graph.png" />
                 <h2 class="work-item-title">Product Research</h2>
                 <p class="work-item-text">Analyzing products that I have experience with as a consumer from perspectives focused on their usability and their market competitiveness.</p>
-                <button class="grow work-button">VIEW MORE</button>
+                <button class="grow work-button" onclick="openModal();currentSlide(2)">VIEW MORE</button>
             </div>
             <div class="work-item">
                 <img class="work-icon" src="images/shopping.png" />
                 <h2 class="work-item-title">Marketing</h2>
                 <p class="work-item-text">Creating custom marketing materials and websites for various student organizations and local artists.</p>
-                <button class="grow work-button">VIEW MORE</button>
+                <button class="grow work-button" data-href="fs-web_testing.pdf">VIEW MORE</button>
             </div>
         </div>
         
@@ -159,5 +170,11 @@
             </ul>
         </div>
     </footer>
+  
+
+   
+
+    
+
 </body>
 </html>
