@@ -382,39 +382,27 @@ nav {
     background-color: #f7f7f7;
     margin-bottom: -10vh;
 }
+#resume-link{
+    cursor: pointer;
+}
 
 
-.myPopup {
-    position: absolute;
-    width: 100%;
+.pop-up-pdf{
     height: 100%;
-    background-color: #A8A8A8;
-    opacity: 0.4;
-    display: none;
-    z-index: 100;
-}
-
-#popup-frame {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 100%;
+    border: none;
 }
 
 
-#web-testing{
+
+.pop-up{
     height: 99vh;
     width: 60vw;
     align-self: center;
     display: none;
-    
 }
-#web-testing-pdf{
-    height: 100%;
-    width: 100%;
-    border: none;
 
-}
-#web-testing-div{
+.pop-up-div{
     z-index: 3;
     display: none;
     position: fixed;
@@ -424,6 +412,7 @@ nav {
     width: 100vw;
     height: 100vh;
 }
+
 .exit-button{
     width: 30px;
     height: 30px;
@@ -432,3 +421,22 @@ nav {
     background-color: transparent;
     border: none;
 }
+/* 
+#dev-pop-up{
+    height: 99vh;
+    width: 60vw;
+    align-self: center;
+    display: none;
+}
+
+#dev-pop-up-div{
+    z-index: 3;
+    display: none;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+}
+*/

@@ -36,11 +36,18 @@
     </div>
     </section>
     <!-- body -->
-    <div id="web-testing-div">
-        <object id="web-testing" data="your_url_to_pdf" type="application/pdf">
-            <iframe id="web-testing-pdf" src="fs_web_testing.pdf"></iframe>
+    <!-- pop ups -->
+    <div id="dev-pop-up-div" class="pop-up-div">
+        <object id="dev-pop-up" class="pop-up" data="your_url_to_pdf" type="application/pdf">
+            <iframe id="dev-pop-up-pdf" class="pop-up-pdf" src="pdfs/fs_web_testing.pdf"></iframe>
         </object>
         <button class="exit-button" onclick="myFunction()">X</button>
+    </div>
+    <div id="resume-pop-up-div" class="pop-up-div">
+        <object id="resume-pop-up" class="pop-up" data="your_url_to_pdf" type="application/pdf">
+            <iframe id="dev-pop-up-pdf" class="pop-up-pdf" src="pdfs/nzazula-resume .pdf"></iframe>
+        </object>
+        <button class="exit-button" onclick="popResume()">X</button>
     </div>
     <section id="about-home" class="home-section">
         <div id="about-text-div">
@@ -157,7 +164,7 @@
                     <a class="list-link" href="https://codepen.io/nikzazula">Codepen</a>
                 </li>
                 <li class="list-item">
-                    <a class="list-link">Resume</a>
+                    <a id="resume-link" class="list-link" onclick="popResume()">Resume</a>
                 </li>
             </ul>
             <ul class="footer-list">
