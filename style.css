@@ -412,7 +412,7 @@ nav {
 #coursework-home{
     display: flex;
     background-color: #10497f;
-    height: 60vh;
+    height: 400px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
