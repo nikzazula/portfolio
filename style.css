@@ -1,7 +1,12 @@
-html {
-    scroll-behavior: smooth;
-  }
+/*
+Personal portfolio page created by Nikolas Zazula, 
+using a mobile-first development approach.
+*/
 
+html, body {
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
   
 @keyframes fadeInAnimation {
     0% {
@@ -32,6 +37,8 @@ body {
     animation-fill-mode: forwards;
     */
 }
+
+/* NAV BAR*/
 nav {
     display: flex;
     flex-direction: row;
@@ -40,6 +47,7 @@ nav {
     flex-direction: row;
     width: 100%;
 }
+
 #nav-div{
     width: 100%;
     text-align: center; 
@@ -50,6 +58,7 @@ nav {
 #nav-section{
     width: 100%;
 }
+
 #nav{
     z-index: 6;
     background-color: transparent;
@@ -76,28 +85,32 @@ nav {
     justify-content: space-between;
     color: #f7f7f7;
 }
+
 #nav-name{
     text-align: left;
 }
+
 .nav-item{
     text-align: center;
     font-style: none;
     color: #f7f7f7;
 }
+
 #nav-link{
     font-size: 15px;
     text-decoration: none;
     color: #f7f7f7;
 }
+
 #main-title-div{
     text-align: center;
 }
+
 #main-title{
     font-size: 70px;
 }
 
 /* HOME PAGE */
-
 /* animation */
 .grow { 
     transition: all .2s ease-in-out; 
@@ -148,21 +161,22 @@ nav {
     justify-content: center;
 }
 
-/* about */
-
+/* ABOUT SECTION */
 #about-home{
-    
     display: flex;
     flex-direction: row;
+    background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.212)), url(images/main.png);
     background-color:#908f87;
+    background-size: cover;
     color: #f7f7f7;
     align-items: center;
     justify-content: center;
     position: fixed;
     z-index: -1;
-    
 }
+
 #about-img{
+    display: none;
     width: auto;
     height: 100vh;
     padding-top: 5vw;
@@ -177,15 +191,18 @@ nav {
     padding: 5vw;
 }
 
-/* work */
+/* WORK SECTION */
 #work-home{
+    display: none;
     background-color: #ee6352;
     color: #f7f7f7;
     margin-top: 100vh;
 }
+
 #work-title{
     margin-bottom: 10vh;
 }
+
 #work-container{
     display: flex;
     flex-direction: row;
@@ -193,25 +210,28 @@ nav {
     align-items: center;
     padding-left: 5vw;
     padding-right: 5vw;
-
-    
 }
+
 .work-item{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28vw;
+    justify-content: center;
+    text-align: center;
+    width: 50vw;
     margin-left: 5vw;
     margin-right: 5vw;
-    
 }
+
 .work-item-title{
     text-align: center;
 }
+
 .work-item-text{
     overflow: none;
-    height: 200px;
+    height: 120px;
 }
+
 .work-button{
     background-color: #d45444;
     text-decoration: none;
@@ -226,18 +246,108 @@ nav {
     padding-bottom: 10px;
     transition: all .2s ease-in-out; 
 }
+
 .work-button:hover{
     background-color: #D64735;
 }
 
+/* WORK SECTION - MOBILE */
+#mobile-work-home{
+    background-color: #ee6352;
+    color: #f7f7f7;
+    margin-top: 100vh;
+    height: auto;
+}
 
-
-/* experience */
+/* WORKING work scroll */
+.list {
+    display: flex;
+    overflow-x: scroll;
+    /* prevent accidentally going back or triggering other swipe events */
+    overscroll-behavior: contain;
+    /* hide scroll bar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  
+    /* momentum scroll on iOS */
+    -webkit-overflow-scrolling: touch;
+  
+    /* disable vertical scroll for touch */
+    touch-action: pan-x;
+  
+    /* scroll snapping */
+    scroll-snap-type: x mandatory;
+  }
+  
+  /* hide scroll bar */
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .item {
+    height: auto;
+    width: 100%;
+    flex-shrink: 0;
+  
+    /* scroll snapping */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  
+  /* 
+    The styling below is only for the decoration of this demo, 
+    it has no impact on scrolling or scroll behavior
+  */
+  .indicatorsList,
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #f7f7f7;
+   }
+  
+  .indicatorsList {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+   }
+  
+  .indicator:not(:last-child) {
+    margin-right: 16px;
+  }
+  
+  .indicator.active {
+    background-color: #D64735;
+  }
+  
+  .viewport {
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+ 
+  
+  
+/* EXPERIENCE SECTION */
 #experience-home{
     background-color: #ece4b7;
     color: #726e60;
     height: auto;
-    
 }
 .experience-section-title{
     font-weight: bold;
@@ -282,7 +392,7 @@ nav {
 
 .experience-third-img{
     height: auto;
-    width: 50vw;
+    width: 45vw;
 }
 .read-link{
     font-family: 'DM Sans', sans-serif;
@@ -297,51 +407,61 @@ nav {
     color: #726F65;
 }
 
-/* coursework section */
+
+/* COURSEWORK SECTION */
 #coursework-home{
     display: flex;
     background-color: #10497f;
-    height: 30vh;
-    flex-direction: row;
+    height: 60vh;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 #coursework-title{
-    text-align: left;
-    padding-left: 5vw;
+    text-align: center;
 }
 
 #coursework-container{
-    padding-left: 2vw;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
 }
 #coursework-text{
+    text-align: center;
     width: 70%;
-    padding-left: 5vw;
 }
 #coursework-button{
+    margin-top: 50px;
     background-color: #d45444;
     color: #f7f7f7;
     border: none;
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
-    letter-spacing: .05em;
+    align-self: center;
     padding-left: 50px;
     padding-right: 50px;
     height: 50px;
     font-size: 15px;
-    width: 220px;
-    margin-right: 100px;
+    width: 250px;
 }
 #coursework-button:hover{
     transition: all .5s ease-in-out;
     background-color: #D64735;
 }
 
+
+/* CONTACT */
 /* footer color = #f6f7f8 */
+
+.social-icon{
+    width: 50px;
+    height: auto;
+}
+.social-icon:hover{
+    transition: all .5s ease-in-out;
+}
+
 #body-grid-container{
     display: grid;
     width: 100%;
@@ -353,11 +473,22 @@ nav {
     color: #10497f;
 }
 .footer-list{
-    color: #10497f;
-    list-style: none;
+    color: #10497f;   
+    display: grid;
+    grid-template-columns: 2fr .75fr .75fr .75fr .75fr .75fr;
+    grid-auto-flow: row;
+    flex-direction: row;
     font-family: 'DM Sans', sans-serif;
-    width: 300px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    width: 100%;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 
 .list-title{
     margin-bottom: -1px;
@@ -386,14 +517,11 @@ nav {
     cursor: pointer;
 }
 
-
 .pop-up-pdf{
     height: 100%;
     width: 100%;
     border: none;
 }
-
-
 
 .pop-up{
     height: 99vh;
@@ -421,7 +549,7 @@ nav {
     background-color: transparent;
     border: none;
 }
-/* 
+
 #dev-pop-up{
     height: 99vh;
     width: 60vw;
@@ -439,4 +567,143 @@ nav {
     width: 100vw;
     height: 100vh;
 }
-*/
+
+
+
+.desktop{
+    display: none;
+}
+
+/* tablet */
+@media (min-width: 481px) {
+    
+
+}
+
+
+/* desktop */
+@media (min-width: 1025px) {
+    /* GENERAL */
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+
+    /* ABOUT SECTION */
+    #about-home{
+        display: flex;
+        flex-direction: row;
+        background-color:#908f87;
+        background-image: none;
+        color: #f7f7f7;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: -1;
+    }
+
+    #about-img{
+        display: block;
+        width: auto;
+        height: 100vh;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }   
+
+    #about-text-div{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vw;
+    }
+
+    /* WORK SECTION */
+    #mobile-work-home{
+        display: none;
+    }
+    #work-home{
+        display: block;
+    }
+    #work-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    .work-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 28vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    
+    .work-item-title{
+        text-align: center;
+    }
+    
+    .work-item-text{
+        overflow: none;
+        height: 200px;
+    }
+
+    /* COURSEWORK SECTION */
+    #coursework-home{
+        display: flex;
+        background-color: #10497f;
+        height: 30vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #coursework-title{
+        text-align: left;
+        padding-left: 5vw;
+    }
+
+    #coursework-container{
+        padding-left: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    #coursework-text{
+        text-align: left;
+        width: 70%;
+        padding-left: 5vw;
+    }
+
+    #coursework-button-mobile{
+        display: none;
+    }
+
+    #coursework-button{
+        background-color: #d45444;
+        color: #f7f7f7;
+        border: none;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 50px;
+        font-size: 15px;
+        width: 250px;
+        margin-right: 100px;
+    }
+
+    #coursework-button:hover{
+        transition: all .5s ease-in-out;
+        background-color: #D64735;
+    }
+}
+  

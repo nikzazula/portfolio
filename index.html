@@ -4,9 +4,7 @@
 <html id="top" lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="html5reset.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Nikolas Zazula</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +13,7 @@
     <link rel="icon" href="images/favicon.png">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!--scripts-->
-    <script type="text/javascript" src="js/portfolio.js"></script>
-    <script src="site.js"></script>
+   
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,7 +25,8 @@
             <ul id="nav-list">
             <li id="nav-name" class="nav-item"><a  id="nav-link" href="index.html">NIKOLAS ZAZULA</a></li>
             <li class="nav-item"><a  id="nav-link" href="#top">HOME</a></li>
-            <li class="nav-item"><a  id="nav-link" href=#work-home>MY WORK</a></li>
+            <li class="nav-item desktop"><a  id="nav-link" href=#work-home>MY WORK</a></li>
+            <li class="nav-item mobile"><a  id="nav-link" href=#mobile-work-home>MY WORK</a></li>
             <li class="nav-item"><a  id="nav-link" href=#experience-home>EXPERIENCE</a></li>
             <li class="nav-item"><a  id="nav-link" href=#footer-div>CONTACT</a></li>
             </ul>
@@ -56,33 +54,73 @@
             specializing in computation, and minoring in Computer Science.<br><br>Outside of school, I'm a bartender, 
             jazz drummer and a self-taught web developer.</p>
         </div>
-        <img id="about-img" src="images/5A72B7B6-A3FC-4428-982B-E5C72818D3DD.png"/>
+        <img id="about-img" src="images/main.png"/>
     </section>
     <section id="work-home" class="home-section">
         <h1 id="work-title" class="home-title">MY WORK</h1>
         <div id="work-container">
             <div class="work-item">
-                <img class="work-icon" src="images/dev.png" />
+                <img class="work-icon" src="images/work/dev.png" />
                 <h2 class="work-item-title">Development</h2>
                 <p class="work-item-text">Various development projects, including contract web design work and software development using full stack experience.</p>
-                <button class="grow work-button" onclick="myFunction()" >VIEW MORE</button>
-                
+                <button class="grow work-button"  >VIEW MORE</button>
             </div>
             <div class="work-item">
-                <img class="work-icon" src="images/graph.png" />
+                <img class="work-icon" src="images/work/graph.png" />
                 <h2 class="work-item-title">Product Research</h2>
-                <p class="work-item-text">Analyzing products that I have experience with as a consumer from perspectives focused on their usability and their market competitiveness.</p>
-                <button class="grow work-button" onclick="openModal();currentSlide(2)">VIEW MORE</button>
+                <p class="work-item-text">Needs assessment and usabilitity analysis, conducted on products that I've used as a consumer.</p>
+                <button class="grow work-button" onclick="myFunction()">VIEW MORE</button>
             </div>
             <div class="work-item">
-                <img class="work-icon" src="images/shopping.png" />
+                <img class="work-icon" src="images/work/shopping.png" />
                 <h2 class="work-item-title">Marketing</h2>
                 <p class="work-item-text">Creating custom marketing materials and websites for various student organizations and local artists.</p>
                 <button class="grow work-button" data-href="fs-web_testing.pdf">VIEW MORE</button>
             </div>
         </div>
+       
         
     </section>
+    <section id="mobile-work-home" class="home-section">
+        <h1 id="work-title" class="home-title">MY WORK</h1>
+        <div id="work-container">
+        <div class="viewport">
+            <ul class="list">
+              <li class="item">
+                <div class="work-item">
+                    <img class="work-icon" src="images/work/dev.png" />
+                    <h2 class="work-item-title">Development</h2>
+                    <p class="work-item-text">Various development projects, including contract web design work and software development using full stack experience.</p>
+                    <button class="grow work-button"  >VIEW MORE</button>
+                </div>
+              </li>
+              <li class="item">
+                <div class="work-item">
+                    <img class="work-icon" src="images/work/graph.png" />
+                    <h2 class="work-item-title">Product Research</h2>
+                    <p class="work-item-text">Needs assessment and usabilitity analysis, conducted on products that I've used as a consumer.</p>
+                    <button class="grow work-button" onclick="myFunction()">VIEW MORE</button>
+                </div>
+              </li>
+              <li class="item">
+                <div class="work-item">
+                    <img class="work-icon" src="images/work/shopping.png" />
+                    <h2 class="work-item-title">Marketing</h2>
+                    <p class="work-item-text">Creating custom marketing materials and websites for various student organizations and local artists.</p>
+                    <button class="grow work-button" data-href="fs-web_testing.pdf">VIEW MORE</button>
+                </div>
+              </li>
+            </ul>
+            <ul class="indicatorsList" aria-hidden>
+              <li class="indicator"></li>
+              <li class="indicator"></li>
+              <li class="indicator"></li>
+            </ul>
+          </div>
+         
+        </div> 
+    </section>
+
     <section id="experience-home" class="home-section">
         <h1 class="home-title">EXPERIENCE</h1>
             <div id="experience-container">
@@ -98,7 +136,7 @@
                             <a class="read-link">READ MORE</a>
                         </div>
                     </div>
-                    <img class="experience-first-img" src="images/wireframe.png" />
+                    <img class="experience-first-img" src="images/experience/wireframe.png" />
                 </div>
                 <div class="experience-item-sec">
                     <div class="experience-text-sec">
@@ -112,7 +150,7 @@
                         <a class="read-link" href="https://allison-c.medium.com/m-product-managers-and-gen-z-change-makers-surveying-sociopolitical-issues-awareness-and-6b88aab6a48e">READ MORE</a>
                     </div>
                     </div>
-                    <img class="experience-img" src="images/living-room.png" />
+                    <img class="experience-img" src="images/experience/living-room.png" />
                 </div>
                 <div class="experience-item">
                     <div class="experience-text">
@@ -124,7 +162,7 @@
                             <a class="read-link">READ MORE</a>
                         </div>
                     </div>
-                    <img class="experience-third-img" src="images/plants.png" />
+                    <img class="experience-third-img" src="images/experience/plants.png" />
                 </div>
                 
             </div>
@@ -135,6 +173,7 @@
         <div id="coursework-container">
             <h1 class="home-title" id="coursework-title">COURSEWORK</h1>
             <p id="coursework-text">Click to view a detail of the coursework I've undertaken throughout my education, with brief summaries of course content and subject matter.</p>
+           
         </div>
             <button class="grow" id="coursework-button">VIEW DETAIL</button>
         
@@ -143,45 +182,36 @@
     <footer>
         <div id="footer-div">
             <ul class="footer-list">
-                <p id="footer-name">Nikolas Zazula</p>
-            </ul>
-            <ul class="footer-list">
-                <li class="list-item">
-                    <p class="list-title">Socials</p>
+                <li>
+                    <p id="footer-name">Nikolas Zazula</p>
                 </li>
-                <li class="list-item">
-                    <a class="list-link" href="https://github.com/nikzazula">Github</a>
+                <li>
+                    <a class="list-link" href="https://github.com/nikzazula">
+                        <img class="social-icon grow" src="images/socials/github-blue.png" />
+                    </a>
+                <li>
+                    <a class="list-link" href=https://app.joinhandshake.com/stu/users/4117218>
+                        <img class="social-icon grow" src="images/socials/deal.png" />
+                    </a>
                 </li>
-                <li class="list-item">
-                    <a class="list-link" href="https://www.linkedin.com/in/nikolas-zazula-4145ba192/">LinkedIn</a>
+                <li>
+                    <a class="list-link" href="https://www.linkedin.com/in/nikolas-zazula-4145ba192/">
+                        <img class="social-icon grow" src="images/socials/linkedin-circle.png" />
+                    </a>
                 </li>
-            </ul>
-            <ul class="footer-list">
-                <li class="list-item">
-                    <p class="list-title">Works</p>
+                <li>
+                    <a class="list-link" href=mailto:nikzazula@gmail.com? subject="subject">
+                        <img class="social-icon grow" src="images/socials/email.png" />
+                    </a>
                 </li>
-                <li class="list-item">
-                    <a class="list-link" href="https://codepen.io/nikzazula">Codepen</a>
-                </li>
-                <li class="list-item">
-                    <a id="resume-link" class="list-link" onclick="popResume()">Resume</a>
-                </li>
-            </ul>
-            <ul class="footer-list">
-                <li class="list-item">
-                    <p class="list-title">Contact</p>
-                </li>
-                <li class="list-item">
-                    <a class="list-link" href=mailto:nikzazula@gmail.com? subject="subject">nikzazula@gmail.com</a>
+                <li>
+                    <a id="resume-link" class="list-link" onclick="popResume()">
+                        <img class="social-icon grow" src="images/socials/cv.png" />
+                    </a>
                 </li>
             </ul>
         </div>
     </footer>
-  
-
-   
-
-    
-
+    <script src="site.js"></script>
 </body>
 </html>
