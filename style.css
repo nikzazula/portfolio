@@ -25,7 +25,7 @@ body {
     background-color: transparent;
     margin-left: 0px;
     margin-top: 0px;
-    overflow: none;
+    overflow-x: hidden;
     overscroll-behavior-y: none;
     line-height: 35px;
     font-size: 18px;
@@ -137,7 +137,7 @@ nav {
     width: 100%;
 }
 .home-section{
-    width: auto;
+    width: 100%;
     height: 80vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -145,7 +145,7 @@ nav {
 
 .home-title{
     text-align: center;
-    font-size: 60px;
+    font-size: 3em;
     font-family: 'Prata', serif;
     font-style: none;
     text-decoration: none;
@@ -163,7 +163,6 @@ nav {
 
 /* ABOUT SECTION */
 #about-home{
-    width: 100%;
     display: flex;
     flex-direction: row;
     background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.212)), url(images/main.png);
@@ -178,7 +177,7 @@ nav {
 
 #about-img{
     display: none;
-    width: auto;
+    width: 100%;
     height: 100vh;
     padding-top: 5vw;
     padding-bottom: 5vw;
@@ -219,7 +218,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 50vw;
+    width: 60vw;
     margin-left: 5vw;
     margin-right: 5vw;
 }
@@ -241,6 +240,7 @@ nav {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     letter-spacing: .05em;
+    margin-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
@@ -287,7 +287,7 @@ nav {
   
   .item {
     height: auto;
-    width: 100%;
+    width: 1fr;
     flex-shrink: 0;
   
     /* scroll snapping */
@@ -335,8 +335,6 @@ nav {
   }
   
   .viewport {
-    height: 100%;
-    width: 100%;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -352,14 +350,13 @@ nav {
 }
 .experience-section-title{
     font-weight: bold;
-    font-size: 35px;
+    font-size: 33px;
 }
 .experience-item{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     padding-left: 5vw;
-    padding-right: 5vw;
 }
 .experience-item-sec{
     display: flex;
@@ -642,7 +639,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 28vw;
+        width: 33%;
         margin-left: 5vw;
         margin-right: 5vw;
     }
@@ -653,7 +650,23 @@ nav {
     
     .work-item-text{
         overflow: none;
-        height: 200px;
+        height: 140px;
+    }
+
+    .work-button{
+        background-color: #d45444;
+        text-decoration: none;
+        border: none;
+        color: #f7f7f7;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        letter-spacing: .05em;
+        margin-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all .2s ease-in-out; 
     }
 
     /* COURSEWORK SECTION */
@@ -675,13 +688,14 @@ nav {
         padding-left: 2vw;
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: start;
+        
     }
 
     #coursework-text{
         text-align: left;
-        width: 70%;
         padding-left: 5vw;
+        width: 70%;
     }
 
     #coursework-button-mobile{
