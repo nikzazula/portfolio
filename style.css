@@ -137,7 +137,7 @@ nav {
     width: 100%;
 }
 .home-section{
-    width: 100%;
+    width: auto;
     height: 80vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
