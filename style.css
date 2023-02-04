@@ -297,7 +297,7 @@ nav {
 
 .home-title{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Prata', serif;
     font-style: none;
     text-decoration: none;
@@ -736,6 +736,16 @@ nav {
     }
     .mobile{
         display: none;
+    }
+
+    .home-title{
+        text-align: center;
+        font-size: 3em;
+        font-family: 'Prata', serif;
+        font-style: none;
+        text-decoration: none;
+        font-weight: 400;
+        letter-spacing: .2em;
     }
 
     /* NAV BAR*/
