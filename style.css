@@ -7,6 +7,9 @@ html, body {
     max-width: 100%;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    
 }
   
 @keyframes fadeInAnimation {
@@ -604,69 +607,62 @@ nav {
 
 
 /* FOOTER */
+#footer-div{
+    display: grid;
+    grid-template-columns: 1.5fr .75fr .75fr .75fr .75fr .75fr;
+    grid-auto-flow: row;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-between;
+    height: 120px;
+    background-color: #f7f7f7;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
+
+.social-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-height: 50px;
+}
 .social-icon{
-    width: 50px;
     height: auto;
+    max-height: 100px;
+    max-width: 50%;
 }
 .social-icon:hover{
     transition: all .5s ease-in-out;
 }
 
-#body-grid-container{
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 60% 40%;
-    justify-content: center;
-}
-#footer-text{
-    color: #10497f;
-}
-.footer-list{
+
+#footer-name{
     color: #10497f;   
-    display: grid;
-    grid-template-columns: 2fr .75fr .75fr .75fr .75fr .75fr;
-    grid-auto-flow: row;
-    flex-direction: row;
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
+    font-size: 15px;
     letter-spacing: .05em;
-    width: 100%;
-    align-items: center;
-    list-style-type: none;
-    text-decoration: none;
-    flex-direction: row;
-    justify-content: space-between;
+    text-align: left;
+    height: auto;
+    align-self: left;
 }
 
 
-.list-title{
-    margin-bottom: -1px;
-    font-weight: bold;
-}
-.list-link{
-    line-height: 35px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #10497f;
-}
-#footer-name{
-    font-weight: bold;
-}
-
-#footer-div{
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    background-color: #f7f7f7;
-}
 #resume-link{
     cursor: pointer;
 }
 
+/* POP UP */
 .pop-up-pdf{
     height: 100%;
     width: 100%;
@@ -727,9 +723,7 @@ nav {
 /* tablet */
 @media (min-width: 481px) {
     
-
 }
-
 
 /* desktop */
 @media (min-width: 1025px) {
@@ -950,5 +944,6 @@ nav {
         transition: all .5s ease-in-out;
         background-color: #D64735;
     }
+    /* FOOTER */
 }
   
