@@ -59,22 +59,23 @@ items.forEach(item => {
   observer.observe(item);
 });
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("dropmenu").classList.toggle("show");
-}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.droplink')) {
-    var dropdowns = document.getElementsByClassName("dropdowncontent");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+const toggleButton = document.getElementsByClassName('droplink')[0]
+const navBarLinks = document.getElementsByClassName('nav-link')[0]
+
+toggleButton.addEventListener('click', () => {
+  navBarLinks.classList.toggle('active')
+})
+
+// GET ALL LINKS IN NAVBAR
+const links = document.querySelectorAll('.dropdowncontent a')
+
+links.forEach(l => {
+  // BIND CLICK EVENT ON ALL LINKS
+  l.addEventListener('click', () => {
+    // ON CLICK, REMOVE active CLASS FROM navBarLinks
+    navBarLinks.classList.remove('active')
+  })
+})
+
+

@@ -188,7 +188,7 @@ nav {
     text-align: center;
 }
     
-.menu li:hover ul {
+.menu li:hover ul, .menu li:focus ul, .menu li:active ul {
     color: #F0F0F0;
     height: 100px;
     opacity: 1;
