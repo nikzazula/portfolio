@@ -60,22 +60,21 @@ items.forEach(item => {
 });
 
 
-const toggleButton = document.getElementsByClassName('droplink')[0]
-const navBarLinks = document.getElementsByClassName('nav-link')[0]
-
-toggleButton.addEventListener('click', () => {
-  navBarLinks.classList.toggle('active')
-})
-
-// GET ALL LINKS IN NAVBAR
-const links = document.querySelectorAll('.dropdowncontent a')
-
-links.forEach(l => {
-  // BIND CLICK EVENT ON ALL LINKS
-  l.addEventListener('click', () => {
-    // ON CLICK, REMOVE active CLASS FROM navBarLinks
-    navBarLinks.classList.remove('active')
-  })
-})
-
+document.onclick = function (event) {
+  if (bar.classList.contains("active") && !event.target.matches(".nav-link")) {
+    bar.classList.remove("active");
+  }
+  if (
+    restaurant.classList.contains("active") && !event.target.matches(".btnRESTAURANT")
+  ) {
+    restaurant.classList.remove("active");
+  }
+  if (
+    dining.classList.contains("active") &&
+    !event.target.matches(".drop-link")
+  ) {
+    bar.classList.remove("active");
+  }
+};
+ 
 

@@ -180,7 +180,7 @@ nav {
     height: 0;
     margin-left: 0;
     padding-left: 0px;
-    opacity: 0;
+     opacity: 0;
     position: absolute;
     transition: all .5s ease;
     width: 94px;
@@ -188,13 +188,14 @@ nav {
     text-align: center;
 }
     
-.menu li:hover ul, .menu li:focus ul, .menu li:active ul {
+
+.menu li:focus ul, .menu li:hover ul {
     color: #F0F0F0;
     height: 100px;
     opacity: 1;
     transform: translateY(0);
 }
-    
+  
 .menu ul a {
     color: white;
     text-decoration: none;
@@ -204,6 +205,14 @@ nav {
     font-weight: bold;
     width: 100px;
 }
+
+#SettingOpt{
+    list-style-type: none;
+}
+#lisst{
+    list-style-type: none;
+}
+div.userMenu{display:none}
 
 /* The dropdown container */
 .dropdown {
