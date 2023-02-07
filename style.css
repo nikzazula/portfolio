@@ -189,7 +189,8 @@ nav {
 }
     
 
-.menu li:focus ul, .menu li:hover ul {
+.menu li:active ul
+/*, .menu li:focus ul, .menu li:hover ul */{
     color: #F0F0F0;
     height: 100px;
     opacity: 1;
