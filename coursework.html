@@ -1,0 +1,192 @@
+<!--Designed by Nikolas Zazula-->
+<!--PORTFOLIO-->
+<!DOCTYPE html>
+<html id="top" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Nikolas Zazula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!--scripts-->
+   
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  </head>
+  <body>
+    <main class="container">
+    <div id="nav-div">
+        <nav id="nav">
+            <ul id="nav-list">
+            <li id="navbar-name" class="nav-item nav-name"><a class="nav-link" href="index.html">NIKOLAS ZAZULA</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#top">HOME</a></li>
+            <li class="nav-item desktop"><a class="nav-link" href=index.html#work-home>MY WORK</a></li>
+            <li class="nav-item mobile"><a class="nav-link" href=index.html#mobile-work-home>MY WORK</a></li>
+            <li class="nav-item"><a class="nav-link" href=index.html#experience-home>EXPERIENCE</a></li>
+            <li class="nav-item"><a class="nav-link" href=index.html#desktop-footer-div>CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mobile-nav-div">
+        <nav id="mobile-nav">
+            <a id="mobile-navbar-name" class="nav-item nav-link nav-name"  href="index.html">NIKOLAS ZAZULA</a>
+            <ul class="menu">
+                <li id="lisst">
+                    <input type="checkbox" id="toggle" class="visually-hidden">
+                    <label id="toggle-label" for="toggle">
+                        <img id="mobile-menu" src="images/menu120.png"/>
+                    </label>
+                    <ul id="dropmenu" class="controlme">
+                        <li class="nav-item"><a class="nav-link" href="#top">HOME</a></li>
+                        <li class="nav-item mobile"><a class="nav-link" href=#mobile-work-home>MY WORK</a></li>
+                        <li class="nav-item"><a class="nav-link" href=#experience-home>EXPERIENCE</a></li>
+                        <li class="nav-item"><a class="nav-link" href=#mobile-footer-div>CONTACT</a></li>
+                    </ul>
+                </li>
+              </ul>
+        </nav>
+    </div>
+    </section>
+    <!-- body -->
+    <!-- pop ups -->
+    <div id="dev-pop-up-div" class="pop-up-div">
+        <object id="dev-pop-up" class="pop-up" data="your_url_to_pdf" type="application/pdf">
+            <iframe id="dev-pop-up-pdf" class="pop-up-pdf" src="pdfs/fs_web_testing.pdf"></iframe>
+        </object>
+        <button class="exit-button" onclick="myFunction()">X</button>
+    </div>
+    <div id="resume-pop-up-div" class="pop-up-div">
+        <object id="resume-pop-up" class="pop-up" data="your_url_to_pdf" type="application/pdf">
+            <iframe id="dev-pop-up-pdf" class="pop-up-pdf" src="pdfs/nzazula-resume .pdf"></iframe>
+        </object>
+        <button class="exit-button" onclick="popResume()">X</button>
+    </div>
+    
+    
+    <section id="detail-coursework" class="home-section">
+        <h1 class="home-title">COURSEWORK</h1>
+        <div id="experience-container">
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">EECS 281 - Data Structures and Algorithms in C++</h2>
+                    <p class="coursework-description">An introduction to algorithm analysis and O-notations. This course emphasizes fundamental data structures 
+                        including lists, stacks, priority queues, hash tables, trees (binary, search and balanced), and graphs. This course also covers searching and sorting algorithms, 
+                        recursive and basic graph algorithms, and requires students implement greedy algorithms and divide and conquer strategy. This course requires 4 major programming 
+                        assigments, along with regular labs and two major exams.
+                    </p>
+                </div>
+            </div>
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">EECS 445 - Introduction to Machine Learning</h2>
+                    <p class="coursework-description">Theory and implementation of state-of-the-art machine learning algorithms 
+                        for large-scale, real-world applications. Topics include supervised learning (regression, classification, kernel methods, 
+                        neural networks, and regularization) and unsupervised learning (clustering, density estimation, and dimensionality reduction).
+                        For each topic, mathematical principles, key algorithmic ideas, and implementation are highlighted.
+                    </p>
+                </div>
+            </div>
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">SI 422 - Needs Assessment and Usability Evaluation</h2>
+                    <p class="coursework-description">This course, requires that students evaluate interactive software products, focusing on 
+                        social computing services, through hands-on experience with a range of methods and design issues. These methods include competitive analysis, 
+                        in-depth evaluation of user needs using observation and ethnographic methods. 
+                        Students also conduct user research through interviews and surveys, constructing personas and scenarios based on target users while using heuristics 
+                        to evaluate systems from these perspectives (heuristic evaluation, cognitive walkthroughs, card sorting). This course also requires comprehensive 
+                        usability testing, with comprehensive methods of improving user interface details and design considerations, and the monitoring and testing
+                        of system designs through experiments and log analysis. This course requires students to create detailed, development-team-ready product reports, and 
+                        to be able to conduct proper, thorough usability testing.
+                    </p>
+                </div>
+            </div>
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">MKT 313 - Consumer Behavior</h2>
+                    <p class="coursework-description">The main objective of this course is to formulate appropriate and effective marketing strategies 
+                        with a clean and accurate understanding of consumers. The objectives of the course are to introduce the student to concepts developed in psychology, 
+                        economics, and sociology and their relationship to consumer behavior, while involving the student directly in the study and analysis of consumer behavior.
+                        Students will develop the ability to translate what can be learned into marketing action implications.
+                    </p>
+                </div>
+            </div>
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">EECS 370 - Introduction to Computer Organization</h2>
+                    <p class="coursework-description">
+                        Basic concepts of computer organization and hardware. Instructions executed by a processor and how to use these instructions 
+                        in simple assembly-language programs. Stored-program concept. Data-path and control for multiple implementations of a processor. 
+                        Performance evaluation, pipelining, caches, virtual memory, input/output.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+    <footer>
+        <div id="mobile-footer-div" class="mobile">
+            <div class="social-div">
+                <a class="list-link" href="https://github.com/nikzazula">
+                    <img class="social-icon grow" src="images/socials/github-blue.png" />
+                </a>
+            </div>
+            <div class="social-div">
+                <a class="list-link" href=https://app.joinhandshake.com/stu/users/4117218>
+                    <img class="social-icon grow" src="images/socials/deal.png" />
+                </a>
+            </div>
+            <div class="social-div">
+                <a class="list-link" href="https://www.linkedin.com/in/nikolas-zazula-4145ba192/">
+                    <img class="social-icon grow" src="images/socials/linkedin-circle.png" />
+                </a>
+            </div>
+            <div class="social-div">
+                <a class="list-link" href=mailto:nikzazula@gmail.com? subject="subject">
+                    <img class="social-icon grow" src="images/socials/email.png" />
+                </a> 
+            </div>
+            <div class="social-div">                     
+                <a id="resume-link" class="list-link" onclick="popResume()">
+                    <img class="social-icon grow" src="images/socials/cv.png" />
+                </a>
+            </div>  
+        </div>
+        <div id="desktop-footer-div" class="desktop">
+            <div id="footer-name-div">
+                <p id="footer-name">Nikolas Zazula</p>
+            </div>
+            <div class="social-div">
+                <a class="list-link" href="https://github.com/nikzazula">
+                    <img class="social-icon grow" src="images/socials/github-blue.png" />
+                </a>
+            </div>
+            <div class="social-div">
+                <a class="list-link" href=https://app.joinhandshake.com/stu/users/4117218>
+                    <img class="social-icon grow" src="images/socials/deal.png" />
+                </a>
+            </div>
+            <div class="social-div">
+                <a class="list-link" href="https://www.linkedin.com/in/nikolas-zazula-4145ba192/">
+                    <img class="social-icon grow" src="images/socials/linkedin-circle.png" />
+                </a>
+            </div>
+            <div class="social-div">
+                <a class="list-link" href=mailto:nikzazula@gmail.com? subject="subject">
+                    <img class="social-icon grow" src="images/socials/email.png" />
+                </a> 
+            </div>
+            <div class="social-div">                     
+                <a id="resume-link" class="list-link" onclick="popResume()">
+                    <img class="social-icon grow" src="images/socials/cv.png" />
+                </a>
+            </div>  
+        </div>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>

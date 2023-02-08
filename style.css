@@ -89,11 +89,6 @@ nav {
     height: auto;
     width: 100%;
 }
-  
-#mobile-nav .hover {
-    color: #323232;
-    text-decoration: underline;
-}
 
 #nav-section{
     width: 100%;
@@ -105,10 +100,6 @@ nav {
     height: auto;
     }
   
-#nav .hover {
-    color: #323232;
-    text-decoration: underline;
-}
 
 #nav-list{
     display: grid;
@@ -297,6 +288,10 @@ nav {
     grid-template-columns: 60% 40%;
     justify-content: center;
 }
+
+/* ------------------------------------- */
+/*              HOME PAGE                */
+/* ------------------------------------- */
 
 /* ABOUT SECTION */
 #about-home{
@@ -674,6 +669,7 @@ nav {
 .exit-button{
     width: 30px;
     height: 30px;
+    font-size: 15px;
     margin-left: -30px;
     color: white;
     background-color: transparent;
@@ -682,7 +678,7 @@ nav {
 
 #dev-pop-up{
     height: 99vh;
-    width: 60vw;
+    width: 90vw;
     align-self: center;
     display: none;
 }
@@ -698,6 +694,34 @@ nav {
     height: 100vh;
 }
 
+
+/* ------------------------------------- */
+/*          COURSEWORK PAGE              */
+/* ------------------------------------- */
+#detail-coursework{
+    background-color: #10497f;
+    height: auto;
+}
+
+.coursework-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5vw;
+}
+.coursework-text{
+    padding-right: 5vw;
+    width: 100%;
+    height: auto;
+    overflow: none;
+}
+.coursework-description{
+    width: 90vw;
+}
+
+
+
+
 .desktop{
     display: none;
 }
@@ -707,6 +731,9 @@ nav {
     
 }
 
+/* ------------------------------------- */
+/*        MEDIA QUERY - DESKTOP          */
+/* ------------------------------------- */
 /* desktop */
 @media (min-width: 1025px) {
     /* GENERAL */
@@ -955,6 +982,34 @@ nav {
 
     #mobile-footer-div{
         display: none;
+    }
+
+    .exit-button{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        margin-left: -30px;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    #dev-pop-up{
+        height: 99vh;
+        width: 60vw;
+        align-self: center;
+        display: none;
+    }
+    
+    #dev-pop-up-div{
+        z-index: 3;
+        display: none;
+        position: fixed;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, .5);
+        width: 100vw;
+        height: 100vh;
     }
 }
   
