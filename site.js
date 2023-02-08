@@ -1,3 +1,5 @@
+
+
 //dev pop up
 function myFunction() {
   var x = document.getElementById("dev-pop-up-div");
@@ -58,23 +60,4 @@ function activateIndicator(index) {
 items.forEach(item => {
   observer.observe(item);
 });
-
-
-document.onclick = function (event) {
-  if (bar.classList.contains("active") && !event.target.matches(".nav-link")) {
-    bar.classList.remove("active");
-  }
-  if (
-    restaurant.classList.contains("active") && !event.target.matches(".btnRESTAURANT")
-  ) {
-    restaurant.classList.remove("active");
-  }
-  if (
-    dining.classList.contains("active") &&
-    !event.target.matches(".drop-link")
-  ) {
-    bar.classList.remove("active");
-  }
-};
- 
 
