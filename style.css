@@ -711,7 +711,29 @@ nav {
     width: 90vw;
 }
 
+/* ------------------------------------- */
+/*            CONSULTING PAGE            */
+/* ------------------------------------- */
 
+
+.consulting-first-img{
+    height: auto;
+    width: 45vw;
+}
+.consulting-img{
+    width: 40vw;
+    height: auto;
+}
+
+.consulting-third-img{
+    height: auto;
+    width: 45vw;
+}
+
+
+/* ------------------------------------- */
+/*              DESIGN PAGE              */
+/* ------------------------------------- */
 
 
 .desktop{
