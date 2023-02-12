@@ -56,7 +56,10 @@
     </div>
     </section>
     <!-- body -->
-    <section id="experience-home" class="home-section">
+    <!----------------------------------------------------------------------->
+    <!----------------------- CONSULTING (DESKTOP) -------------------------->
+    <!----------------------------------------------------------------------->
+    <section id="consulting-desktop" class="home-section desktop">
         <h1 class="home-title">BLOCKCHAIN CONSULTING</h1>
             <div id="experience-container">
                 <div class="experience-item">
@@ -94,7 +97,6 @@
                             user's work and reupload it to the app as their own. Our task was to find a way to use our background in blockchain to develop a way to easily find instances 
                             of plaigarism and prevent users from reuploading a previous work.
                         </p>
-                        
                     </div>
                     <img class="consulting-third-img" src="images/consulting/consulting.png" />
                 </div>
@@ -169,6 +171,117 @@
                     <img class="consulting-third-img" src="images/consulting/consulting-solution.png" />
                 </div>
             </div>
+    </section>
+    <!----------------------------------------------------------------------->
+    <!----------------------- CONSULTING (MOBILE) --------------------------->
+    <!----------------------------------------------------------------------->
+    <section id="consulting-mobile" class="home-section mobile">
+        <h1 class="home-title">BLOCKCHAIN CONSULTING</h1>
+        <div id="experience-container">
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">About Fashmates</h2>
+                        <p class="coursework-description">Fashmates is a tech-startup based in Fremont, California whose 
+                            flagship product is their namesake fashion application. It allows users to curate their 
+                            own style preferences. By doing so, app provides users the ability to shop their favorite brands, 
+                            showing them specific products based on their style preferences. Pro users can also sign up as stylists,
+                            who are able to create their own looks with specific products, and have them shown to other users.
+                        </p>
+                        <div class="read-link-div">
+                            <a class="read-link" href="https://www.fashmates.com/">SEE FASHMATES</a>
+                        </div>
+                </div>
+            </div>
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">Our Work</h2>
+                        <p class="coursework-description">Through my experience with Blockchain at Michigan, I was given the opportunity to work as a member
+                            of a consulting team that worked with the company's CEO and CFO. We were presented with specific briefs about ways in which the company 
+                            was interested in implementing blockchain technology within the application, and our job was to provide their development team with a report 
+                            in which they couid use our brief to improve their user experience.
+                        </p>
+                </div>
+            </div>
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">Problem Satement</h2>
+                        <p class="coursework-description">My team was tasked with the problem of addressing stylist plagarism between users. Stylists are able to upload their
+                            own custom images within the app, and use the product database to tag artlicles of clothing in their upload so they can be easily found by other users 
+                            to purchase. The company's review team would consistently recieve reports regarding reuploads of user stylings by other users, who would screenshot a 
+                            user's work and reupload it to the app as their own. Our task was to find a way to use our background in blockchain to develop a way to easily find instances 
+                            of plaigarism and prevent users from reuploading a previous work.
+                        </p>
+                </div>
+            </div>
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">Research</h2>
+                        <p class="coursework-description">Our team initially focused our energy into finding use cases where blockchain technology was used to digitally protect artist copyright. One 
+                            of the first things we put our energy into was finding ways in which artists uploaded their works as Non-Fungible Tokens (NFTs), as this seemed like the most promising starting point. 
+                            This was research conducted in 2019, where the concept of using NFTs in this way was definitely a much more promising frontier. However, through discovering more in regard to how this technology 
+                            was used, we came upon several problems with using the technology in this way:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                There are several prominent social media applications that have similar issues with content plaigarism (Instagram, Facebook, Pinterest, etc.) that still have no way in which this 
+                                issue has been addressed beyond a reporting system, which Fashmates itself already has in place.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                NFT technology can guarantee a unique instance of an upload that is contained within the blockchain, but beyond this, it would be largely impossible to ensure that the same work isn't 
+                                just uploaded multiple times. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                It would be relatively straightforward to compare filename strings to prevent the upload of a previously posted image file, however the ability of users to screenshot and create new image 
+                                files with wholly-unique data complicates this problem even further.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            One promising aspect to the design of Fashmates is that the number of stylists are limited in comparison the the size of the overall user base, 
+                            so this restricts this particular problem to a smaller subset of users.
+                        </p>
+                </div>
+            </div>
+            <div class="coursework-item">
+                <div class="coursework-text">
+                    <h2 class="experience-section-title">Solution</h2>
+                        <p class="coursework-description">Our brief consisted of multiple recommendations based upon our own experience as developers, coupled with an understanding 
+                            of the persistent issue of plaigarism on social media platforms. While it seems that the overall standard tends to be a reporting system across the board, 
+                            there were ways in which we hoped to make this process easier on users and on team members that handled these complaints, and hopefully have a minimal amount of 
+                            individual cases in which reported instances had to be manually reviewed. <br><br>
+                            Our team felt that using a blockchain-based approach would ultimately not be the best fit. As mentioned in the above explanation of the problems we faced when considering 
+                            a solution, we didn't believe it was appropriate in this instance. Instead, we made the following recommendations:
+                        </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                    Implementing a computer vision program to find similarities between images to make an initial review. This program would return whether or not the similarity between images 
+                                    is high enough to be a result of user plaigarism. Users would be allowed to dispute the decision (much like on other social media reporting systems), and would lead to a manual review. 
+                                    This would reduce labor costs for the company and hopefully the burden on reporting team members to review cases.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                    Having a user watermark on uploaded images was another option we presented as well, as it would be much easier to compare watermarks on images to quickly identify instances 
+                                    of plaigarism. However, this option also could have been easy to work around, as screenshotted images could easily be cropped to remove this section of the image.
+                                    </p>
+                                </li>
+                            </ul>
+                        <p>
+                            Overall we decided that our first option regarding computer vision would be the most efficient and effective way to ease the issues associated with handling user reports of plaigarism. We developed 
+                            a report for the company, as well as creating a presentation encompassing our work, which you can see below.
+                        </p>
+                        <div class="read-link-div">
+                            <a class="read-link" href="/images/consulting/fashmates.pdf" download>VIEW REPORT</a>
+                        </div>
+                </div>
+            </div>
+        </div>
     </section>
   </main>
     <footer>

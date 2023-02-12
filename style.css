@@ -715,6 +715,17 @@ nav {
 /*            CONSULTING PAGE            */
 /* ------------------------------------- */
 
+#consulting-desktop{
+    background-color: #ece4b7;
+    color: #726e60;
+    height: auto;
+    
+}
+#consulting-mobile{
+    background-color: #ece4b7;
+    color: #726e60;
+    height: auto;
+}
 
 .consulting-first-img{
     height: auto;
@@ -1025,5 +1036,9 @@ nav {
         width: 100vw;
         height: 100vh;
     }
+    /* ------------------------------------- */
+    /*            CONSULTING PAGE            */
+    /* ------------------------------------- */
+
 }
   
