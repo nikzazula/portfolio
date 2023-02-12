@@ -752,12 +752,22 @@ nav {
 /* ------------------------------------- */
 
 
+/* ------------------------------------- */
 .desktop{
     display: none;
 }
 
 /* tablet */
 @media (min-width: 481px) {
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    #work-home{
+        display: none;
+    }
     
 }
 
