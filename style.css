@@ -177,7 +177,6 @@ nav {
     left: -9999px;
 }
 
-
 #toggle:not(:checked) ~ .controlme {
     margin-top: -10px;
     color: #F0F0F0;
@@ -227,6 +226,10 @@ nav {
 
 #main-title{
     font-size: 70px;
+}
+
+#tab-experience{
+    display: none;
 }
 
 /* HOME PAGE */
@@ -757,7 +760,9 @@ nav {
     display: none;
 }
 
-/* tablet */
+/* ------------------------------------- */
+/*        MEDIA QUERY - TABLET           */
+/* ------------------------------------- */
 @media (min-width: 481px) {
     .desktop{
         display: block;
@@ -768,13 +773,18 @@ nav {
     #work-home{
         display: none;
     }
+    #mobile-experience{
+        display: none;
+    }
+    #tab-experience{
+        display: block;
+    }
     
 }
 
 /* ------------------------------------- */
 /*        MEDIA QUERY - DESKTOP          */
 /* ------------------------------------- */
-/* desktop */
 @media (min-width: 1025px) {
     /* GENERAL */
     .desktop{
