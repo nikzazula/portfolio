@@ -753,7 +753,25 @@ nav {
 /* ------------------------------------- */
 /*              DESIGN PAGE              */
 /* ------------------------------------- */
+#design-section{
+    display: block;
+    background-color: #ece4b7;
+    color: #726e60;
+    height: auto;
 
+}
+.design-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.design-image{
+    height: 400px;
+    width: auto;
+}
 
 /* ------------------------------------- */
 .desktop{
