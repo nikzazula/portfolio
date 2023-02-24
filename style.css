@@ -416,7 +416,6 @@ nav {
     height: auto;
     width: 1fr;
     flex-shrink: 0;
-  
     /* scroll snapping */
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -467,8 +466,6 @@ nav {
   }
   
  
-  
-  
 /* EXPERIENCE SECTION */
 #experience-home{
     background-color: #ece4b7;
@@ -638,10 +635,47 @@ nav {
 
 
 /* POP UP */
-#resume-link{
-    cursor: pointer;
+.pop-up-items{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 6;
+}
+.pop-up-items-grid{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.items-div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 200px;
+}
+.items-img{
+    width: 100px;
+    height: 100px;
+}
+.items-description{
+    text-align: center;
+    font-size: 15px;
 }
 
+#research-items{
+    display: none;
+}
+
+/* pdfs */
 .pop-up-pdf{
     height: 100%;
     width: 100%;
@@ -676,23 +710,11 @@ nav {
     border: none;
 }
 
-#dev-pop-up{
-    height: 99vh;
-    width: 100vw;
-    align-self: center;
-    display: none;
+/* resume */
+#resume-link{
+    cursor: pointer;
 }
 
-#dev-pop-up-div{
-    z-index: 3;
-    display: none;
-    position: fixed;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .5);
-    width: 100vw;
-    height: 100vh;
-}
 
 
 /* ------------------------------------- */
@@ -888,6 +910,44 @@ nav {
         font-size: 15px;
         text-decoration: none;
         color: #f7f7f7;
+    }
+
+    /* POP UP */
+    .pop-up-items{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        z-index: 6;
+    }
+    .pop-up-items-grid{
+        width: 60%;
+        height: auto;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .items-div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 200px;
+    }
+    .items-img{
+        width: 125px;
+        height: 125px;
+    }
+    .items-description{
+        text-align: center;
+        font-size: 15px;
     }
 
     /* ABOUT SECTION */
