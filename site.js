@@ -34,6 +34,10 @@ function popPDF(name1, name2){
 function popResearch(){
   popItem("research-items")
 }
+function popMobileResearch(){
+  popItem("mobile-research-items")
+}
+
 // MARKETING
 // FASHION NOVA USABILITY TESTING
 function popFS() {

@@ -675,6 +675,10 @@ nav {
     display: none;
 }
 
+#mobile-research-items{
+    display: none;
+}
+
 /* pdfs */
 .pop-up-pdf{
     height: 70%;

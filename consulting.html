@@ -28,7 +28,7 @@
         <nav id="nav">
             <ul id="nav-list">
             <li id="navbar-name" class="nav-item nav-name"><a class="nav-link" href="index.html">NIKOLAS ZAZULA</a></li>
-            <li class="nav-item"><a class="nav-link" href="#top">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#top">HOME</a></li>
             <li class="nav-item desktop"><a class="nav-link" href="index.html#work-home">MY WORK</a></li>
             <li class="nav-item mobile"><a class="nav-link" href="index.html#mobile-work-home">MY WORK</a></li>
             <li class="nav-item"><a class="nav-link" href="index.html#experience-home">EXPERIENCE</a></li>
@@ -62,6 +62,13 @@
     </div>
     </section>
     <!-- body -->
+    <!-- RESUME -->
+    <div id="resume-pop-up-div" class="pop-up-div">
+        <object id="resume-pop-up" class="pop-up" data="your_url_to_pdf" type="application/pdf">
+            <iframe id="dev-pop-up-pdf" class="pop-up-pdf" src="pdfs/nzazula-resume .pdf"></iframe>
+        </object>
+        <button class="exit-button" onclick="popResume()">X</button>
+    </div>
     <!----------------------------------------------------------------------->
     <!----------------------- CONSULTING (DESKTOP) -------------------------->
     <!----------------------------------------------------------------------->
@@ -171,7 +178,7 @@
                             a report for the company, as well as creating a presentation encompassing our work, which you can see below.
                         </p>
                         <div class="read-link-div">
-                            <a class="read-link" href="/pdfs/fashmates.pdf" download>VIEW REPORT</a>
+                            <a class="read-link" href="https://drive.google.com/file/d/1lqfDu4m687qtJq3THcXNjlcFsBfQoeDP/view?usp=sharing">VIEW REPORT</a>
                         </div>
                     </div>
                     <img class="consulting-third-img" src="images/consulting/consulting-solution.png" />
@@ -283,7 +290,7 @@
                             a report for the company, as well as creating a presentation encompassing our work, which you can see below.
                         </p>
                         <div class="read-link-div">
-                            <a class="read-link" href="/images/consulting/fashmates.pdf" download>VIEW REPORT</a>
+                            <a class="read-link" href="https://drive.google.com/file/d/1lqfDu4m687qtJq3THcXNjlcFsBfQoeDP/view?usp=sharing">VIEW REPORT</a>
                         </div>
                 </div>
             </div>
@@ -316,7 +323,7 @@
                 </a> 
             </div>
             <div class="social-div">                     
-                <a id="resume-link" class="list-link" onclick="popResume()">
+                <a id="resume-link" class="list-link" href="https://drive.google.com/file/d/1r5qtQebZWW2xJEHNvRv3QXMKnZ7bGNgg/view?usp=sharing">
                     <img class="social-icon grow" src="images/socials/cv.png" />
                 </a>
             </div>  
