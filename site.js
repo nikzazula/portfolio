@@ -29,6 +29,12 @@ function popPDF(name1, name2){
 
 // WORK POP-UPS
 // DEVELOPMENT
+function popDevelopment(){
+  popItem("development-items")
+}
+function popMobileDevelopment(){
+  popItem("mobile-development-items")
+}
 
 // RESEARCH
 function popResearch(){

@@ -69,19 +69,51 @@
 
     <!---------------------------- DESKTOP DIVS ----------------------------->
     <!-- DEVELOPMENT -->
+    <div id="development-items" class="pop-up-items">
+        <div class="pop-up-items-grid">
+            <a class="code-link" href="https://gitfront.io/r/user-8160901/p1R5cCD1ag82/stocks/">
+            <div class="items-div">
+                <button class="grow work-button" onclick="popDevelopment()">
+                    <img class="items-img" src="images/work/stocks.png">
+                    <p>Stocks</p>
+                    <p class="dev-desc">Simulates stock orders as a "zombie" game.</p>
+                </button>
+            </div>
+        </a>
+        <a class="code-link" href="https://gitfront.io/r/user-8160901/YyNnPVc8AWUB/sillyql/">
+            <div class="items-div">
+                <button class="grow work-button" onclick="popDevelopment()">
+                    <img class="items-img" src="images/work/sql.png">
+                    <p>SQL</p>
+                    <p class="dev-desc">Simple adaptation of SQL in C++.</p>
+                </button>
+            </div>
+        </a>
+        <a class="code-link" href="https://gitfront.io/r/user-8160901/SkJjcpfypAfR/traveling-salesman/">
+            <div class="items-div">
+                <button class="grow work-button" onclick="popDevelopment()">
+                    <img class="items-img" src="images/work/salesman.png">
+                    <p>TSP</p>
+                     <p class="dev-desc">Contains three implementations to solve TSP.</p>
+                </button>
+            </div> 
+        </a>  
+        </div>
+        <button class="grow work-button" onclick="popDevelopment()">EXIT</button>
+    </div>
     
     <!-- PRODUCT RESEARCH -->
     <div id="research-items" class="pop-up-items">
         <div class="pop-up-items-grid">
             <div class="items-div">
                 <button class="grow work-button" onclick="popResearch(), popFS()">
-                    <img class="items-img" src="images/work/fashion-nova.jpeg">
+                    <img class="items-img" src="images/work/testing.png">
                     <p>Usability Research</p>
                 </button>
             </div>
             <div class="items-div">
                 <button class="grow work-button" onclick="popResearch(), popWA()">
-                    <img class="items-img" src="images/work/recruitment.png">
+                    <img class="items-img" src="images/work/account.png">
                     <p>Needs Assessment</p>
                 </button>
             </div>
@@ -98,19 +130,42 @@
     <!----------------------------------------------------------------------->
     <!---------------------------- MOBILE  DIVS ----------------------------->
     <!-- DEVELOPMENT -->
+    <div id="mobile-development-items" class="pop-up-items">
+        <div class="pop-up-items-grid">
+            <div class="items-div">
+                <button class="grow work-button" onclick="popMobileDevelopment(), popFS()">
+                    <img class="items-img" src="images/work/stocks.png">
+                    <p>Stocks</p>
+                </button>
+            </div>
+            <div class="items-div">
+                <button class="grow work-button" onclick="popMobileDevelopment(), popWA()">
+                    <img class="items-img" src="images/work/sql.png">
+                    <p>SQL</p>
+                </button>
+            </div>
+            <div class="items-div">
+                <button class="grow work-button" onclick="popMobileDevelopment(), popSUR()">
+                    <img class="items-img" src="images/work/salesman.png">
+                    <p>TSP</p>
+                </button>
+            </div>   
+        </div>
+        <button class="grow work-button" onclick="popMobileDevelopment()">EXIT</button>
+    </div>
     
     <!-- PRODUCT RESEARCH -->
     <div id="mobile-research-items" class="pop-up-items">
         <div class="pop-up-items-grid">
             <div class="items-div">
                 <button class="grow work-button" onclick="window.location.href='https://drive.google.com/file/d/1OBnXIH48iIZZZViKMdioIcd2xrisgwDa/view?usp=sharing';">
-                    <img class="items-img" src="images/work/fashion-nova.jpeg">
+                    <img class="items-img" src="images/work/testing.png">
                     <p>Usability Research</p>
                 </button>
             </div>
             <div class="items-div">
                 <button class="grow work-button" onclick="window.location.href='https://drive.google.com/file/d/1SE4TBllCHw1kwyoNA2FdSY_Q00amh2CP/view?usp=sharing';">
-                    <img class="items-img" src="images/work/recruitment.png">
+                    <img class="items-img" src="images/work/account.png">
                     <p>Needs Assessment</p>
                 </button>
             </div>
@@ -175,20 +230,20 @@
             <div class="work-item">
                 <img class="work-icon" src="images/work/dev.png" />
                 <h2 class="work-item-title">Development</h2>
-                <p class="work-item-text">Various development projects, including contract web design work and software development using full stack experience.</p>
-                <button class="grow work-button"  >VIEW MORE</button>
+                <p class="work-item-text">Various development projects, including contract web design work and software development.</p>
+                <button class="grow work-button" onclick="popDevelopment()"  >VIEW MORE</button>
             </div>
             <div class="work-item">
-                <img class="work-icon" src="images/work/graph.png" />
+                <img class="work-icon" src="images/work/search.png" />
                 <h2 class="work-item-title">Product Research</h2>
-                <p class="work-item-text">Needs assessment and usabilitity analysis, conducted on products that I've used as a consumer.</p>
+                <p class="work-item-text">Needs assessment and usabilitity analysis, conducted on various products.</p>
                 <button class="grow work-button" onclick="popResearch()">VIEW MORE</button>
             </div>
             <div class="work-item">
                 <img class="work-icon" src="images/work/shopping.png" />
                 <h2 class="work-item-title">Marketing</h2>
                 <p class="work-item-text">Creating custom marketing materials and websites for various student organizations and local artists.</p>
-                <button class="grow work-button" data-href="fs-web_testing.pdf">VIEW MORE</button>
+                <button class="grow work-button" onclick="window.location.href='design.html';">VIEW MORE</button>
             </div>
         </div>
     </section>
@@ -204,15 +259,15 @@
                 <div class="work-item">
                     <img class="work-icon" src="images/work/dev.png" />
                     <h2 class="work-item-title">Development</h2>
-                    <p class="work-item-text">Various development projects, including contract web design work and software development using full stack experience.</p>
-                    <button class="grow work-button" onclick="popMobileResearch()" >VIEW MORE</button>
+                    <p class="work-item-text">Various development projects, including contract web design work and software development.</p>
+                    <button class="grow work-button" onclick="popMobileDevelopment()" >VIEW MORE</button>
                 </div>
               </li>
               <li class="item">
                 <div class="work-item">
-                    <img class="work-icon" src="images/work/graph.png" />
+                    <img class="work-icon" src="images/work/search.png" />
                     <h2 class="work-item-title">Product Research</h2>
-                    <p class="work-item-text">Needs assessment and usabilitity analysis, conducted on products that I've used as a consumer.</p>
+                    <p class="work-item-text">Needs assessment and usabilitity analysis, conducted on various products.</p>
                     <button class="grow work-button" onclick="popMobileResearch()">VIEW MORE</button>
                 </div>
               </li>
